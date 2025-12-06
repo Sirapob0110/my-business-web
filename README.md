@@ -20,15 +20,15 @@ my-business-web
 └── README.md
 
 [Home](index.html)
-![index](Picture/index.png)
+![index](Pictures/index.png)
 
 [About](About.html)
-![About](Picture/About.png)
-![About2](Picture/About2.png)
+![About](Pictures/About.png)
+![About2](Pictures/About2.png)
 
 [Services](Services.html)
-![Services](Picture/Services.png)
-![Services2](Picture/Services2.png)
+![Services](Pictures/Services.png)
+![Services2](Pictures/Services2.png)
 
 [Contact](Contact.html)
-![Contact](Picture/Contact.png)
+![Contact](Pictures/Contact.png)
