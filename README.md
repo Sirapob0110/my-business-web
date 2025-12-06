@@ -23,12 +23,12 @@ my-business-web
 ![index](Picture/index.png)
 
 [About](About.html)
-![about1](Picture/About.png)
-![about2](Picture/About2.png)
+![About](Picture/About.png)
+![About2](Picture/About2.png)
 
 [Services](Services.html)
-![services1](Picture/Services.png)
-![services2](Picture/Services2.png)
+![Services](Picture/Services.png)
+![Services2](Picture/Services2.png)
 
 [Contact](Contact.html)
 ![Contact](Picture/Contact.png)
