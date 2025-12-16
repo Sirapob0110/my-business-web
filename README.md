@@ -7,137 +7,130 @@ The website presents CozyCore’s vision of creating warm, functional, and well-
 
 The project demonstrates the use of modern HTML5 and CSS3 techniques, with a focus on responsive design, clean layouts, and user-friendly interfaces to effectively showcase services, team information, and design solutions.
 
+---
+
 ## Website Pages
 
-| Page     | Description                                         | Link                             |
-| -------- | --------------------------------------------------- | -------------------------------- |
-| Home     | Hero section with animation and call-to-action      | [index.html](index.html)         |
-| About    | Company history, mission/vision, and executive team | [About.html](About.html)         |
-| Services | Service details and pricing comparison table        | [Services.html](Services.html)   |
-| Contact  | Contact information, form, and location map         | [ContactUs.html](ContactUs.html) |
+| Page     | Description                                  | Link                               |
+| -------- | -------------------------------------------- | ---------------------------------- |
+| Home     | Hero section with call-to-action             | [index.html](index.html)           |
+| About    | Company profile, vision, and team            | [About.html](about.html)           |
+| Services | Service details and pricing comparison table | [Services.html](services.html)     |
+| Contact  | Contact information and inquiry form         | [Contact_Us.html](Contact_Us.html) |
+
+---
 
 ## File Structure
 
-```
 my-business-web/
 ├── index.html
 ├── About.html
 ├── Services.html
-├── Contact Us.html
+├── Contact_Us.html
 ├── css/
-│   └── About.css
-│   └── Contact Us.css
-│   └── index.css
-│   └── Services.css
+│ ├── index.css
+│ ├── about.css
+│ ├── services.css
+│ └── Contact_Us.css
 ├── images/
-│   ├── About.png
-│   ├── About2.png
-│   └── ...
+│ ├── index.png
+│ ├── about1.png
+│ ├── about2.png
+│ ├── services1.png
+│ ├── services2.png
+│ ├── contact1.png
+│ └── contact2.png
 └── README.md
-```
+
+---
 
 ## CSS Implementation
 
 ### Selectors
 
-| Type         | Examples                                  | Usage                                 |
-| ------------ | ----------------------------------------- | ------------------------------------- |
-| Universal    | `*`                                       | Reset margin, padding, box-sizing     |
-| Element      | `body`, `h1`, `h2`, `img`, `a`            | Base typography and responsiveness    |
-| Class        | `.container`, `.card`, `.btn`, `.nav-bar` | Reusable components and layout        |
-| ID           | `#Header`, `#footer`, `#mission-vision`   | Unique page sections                  |
-| Pseudo-class | `:hover`, `:active`, `:nth-child(even)`   | Interactive states and table striping |
+| Type         | Examples                                 | Usage                             |
+| ------------ | ---------------------------------------- | --------------------------------- |
+| Universal    | `*`                                      | Reset margin, padding, box-sizing |
+| Element      | `body`, `h1`, `h2`, `img`, `a`           | Base typography and layout        |
+| Class        | `.container`, `.card`, `.btn`, `.navbar` | Reusable UI components            |
+| ID           | `#header`, `#footer`, `#hero`            | Unique page sections              |
+| Pseudo-class | `:hover`, `:active`, `:nth-child(even)`  | Interaction and table styling     |
+
+---
 
 ### CSS Units
 
-| Unit  | Usage                                              |
-| ----- | -------------------------------------------------- |
-| `px`  | Borders, box-shadows, fixed spacing                |
-| `rem` | Font sizes, margins, paddings (Responsive scaling) |
-| `%`   | Container widths, fluid images                     |
-| `vh`  | Hero section height (100vh)                        |
-| `fr`  | Grid fractions for flexible column layouts         |
+| Unit  | Usage                                       |
+| ----- | ------------------------------------------- |
+| `px`  | Borders and small spacing                   |
+| `rem` | Font sizes and padding (responsive scaling) |
+| `%`   | Container widths and images                 |
+| `vh`  | Hero section height                         |
+| `fr`  | Grid column sizing                          |
 
-### Color Palette
+---
 
-| Color      | Hex Code  | Usage                                    |
-| ---------- | --------- | ---------------------------------------- |
-| FB Blue    | `#1877f2` | Headers, Primary Buttons, Links, Accents |
-| Green      | `#42b72a` | Secondary Buttons (Chat/Sign up)         |
-| Dark Gray  | `#1c1e21` | Primary Text                             |
-| Light Gray | `#f0f2f5` | Page Background                          |
-| White      | `#ffffff` | Cards, Navbar, Content Areas             |
+### Color Palette (CozyCore Theme)
+
+| Color       | Hex Code  | Usage                   |
+| ----------- | --------- | ----------------------- |
+| Warm Beige  | `#f5efe6` | Background              |
+| Soft Brown  | `#8b6f5a` | Headers, accents        |
+| Cream White | `#ffffff` | Cards and content areas |
+| Dark Gray   | `#333333` | Main text               |
+| Olive Green | `#7a8f6a` | Buttons and highlights  |
+
+---
 
 ### Typography
 
-- **Font Family:** "Prompt", "Roboto", "Segoe UI", sans-serif
-- **Font Weights:** 400 (regular), 600 (semi-bold), 700 (bold)
-- **Line Height:** 1.6 (readability)
-- **Text Effects:** `text-align: justify`, `text-shadow` (Hero section)
+- **Font Family:** "Prompt", "Segoe UI", sans-serif
+- **Font Weights:** 400, 600, 700
+- **Line Height:** 1.6
 
-### Box Model
+---
 
-- **Padding:** Used for inner spacing in cards, buttons, and sections
-- **Margin:** Spacing between sections and elements
-- **Border:** Input fields, table cells, team images
-- **Border-radius:** Rounded corners (8px, 15px, 50% for avatars)
+### Layout & Positioning
 
-### Positioning & Layout
+| Technique            | Usage                      |
+| -------------------- | -------------------------- |
+| Flexbox              | Navigation, footer         |
+| CSS Grid             | Services and team sections |
+| `position: sticky`   | Navigation bar             |
+| `position: relative` | Hero container             |
 
-| Property             | Usage                              |
-| -------------------- | ---------------------------------- |
-| `position: sticky`   | Navigation bar stays at top        |
-| `position: fixed`    | Back-to-top button and Chat widget |
-| `position: absolute` | Centering text over Hero image     |
-| `position: relative` | Parent container for Hero section  |
-
-### Display & Layout Systems
-
-| System                  | Usage                                               |
-| ----------------------- | --------------------------------------------------- |
-| `display: flex`         | Navigation menu, contact form layout, footer        |
-| `display: grid`         | Services grid (2-column), Team grid, Mission/Vision |
-| `grid-template-columns` | `repeat(auto-fit, minmax(...))` for responsiveness  |
-| `justify-content`       | Centering navigation items                          |
-| `gap`                   | Spacing between grid/flex items                     |
-
-### Hover & Interaction Effects
-
-| Effect           | CSS Properties                                            |
-| ---------------- | --------------------------------------------------------- |
-| Button hover     | Color change, `transform: translateY(-2px)`, shadow       |
-| Card/Image hover | `transform: translateY(-5px)`, `scale(1.1)` (zoom effect) |
-| Link active      | `border-bottom` highlight for current page                |
-| Animations       | Keyframes `@slideInUp` for Hero text load                 |
-| Smooth Scroll    | `scroll-behavior: smooth` for "Top" button                |
+---
 
 ### Responsive Design
 
-| Breakpoint         | Changes                                               |
-| ------------------ | ----------------------------------------------------- |
-| `Max-width: 768px` | Stack navigation, single column grids, adjust padding |
-| Mobile View        | Hide chat widget, adjust font sizes, vertical layouts |
+| Breakpoint         | Behavior                          |
+| ------------------ | --------------------------------- |
+| `max-width: 768px` | Stack layout, single-column grids |
+| Mobile view        | Reduced padding and font size     |
 
 ---
 
 ## Screenshots
 
-_(Place your screenshots in the 'images' folder and update paths below)_
-[Home](index.html)
-![index](Pictures/index.png)
+### Home
 
-[About](About.html)
-![About](Pictures/About.png)
-![About2](Pictures/About2.png)
+![Home](images/index.png)
 
-[Services](Services.html)
-![Services](Pictures/Services.png)
-![Services2](Pictures/Services2.png)
+### About
 
-[ContactUs](Contact Us.html)
-![Contact Us](Pictures/Contact.png)
-![Contact Us2](Pictures/Contact2.png)
+![About](images/about1.png)
+![About](images/about2.png)
+
+### Services
+
+![Services](images/services1.png)
+![Services](images/services2.png)
+
+### Contact
+
+![Contact](images/contact1.png)
+![Contact](images/contact2.png)
 
 ---
 
-© 2025 Meta Platforms, Inc. (Mockup Project). All rights reserved.
+© 2025 CozyCore All rights reserved.
