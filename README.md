@@ -1,23 +1,85 @@
-เว็บไซต์ธุรกิจ CozyCore
+Facebook (Meta) Business Website
+About the Project
+This project is a responsive business website redesign for Meta (Facebook). It showcases the company's mission to bring the world closer together, detailing its history, services, and business solutions. The project demonstrates modern HTML5 and CSS3 techniques, focusing on responsive design, grid layouts, and clean user interfaces.
 
-โปรเจกต์นี้คือเว็บไซต์อย่างเป็นทางการของ CozyCore Co., Ltd. ซึ่งเป็นบริษัทด้านการออกแบบและตกแต่งภายใน (Interior Design & Home Decoration) ที่มุ่งมั่นในการสร้างพื้นที่ที่อบอุ่น สวยงาม และตอบโจทย์การใช้งานสำหรับบ้าน คอนโด และธุรกิจ โดยมีภารกิจหลักคือการออกแบบและพัฒนาพื้นที่ให้สะท้อนตัวตนของลูกค้า ควบคู่ไปกับฟังก์ชันการใช้งานที่มีประสิทธิภาพและมาตรฐานคุณภาพสูง
-
-เว็บไซต์ถูกออกแบบมาเพื่อนำเสนอข้อมูลสำคัญของบริษัทอย่างครบถ้วน ประกอบด้วย:
-**วิสัยทัศน์:** เป็นผู้นำและได้รับความไว้วางใจสูงสุดในด้านการจัดและตกแต่งบ้าน
-**บริการ:** รายละเอียดของบริการต่างๆสำหรับการตกแต่งบ้านในส่วนต่างๆ
-**โครงสร้างราคา:** ตารางเปรียบเทียบช่วงราคาโดยประมาณสำหรับบริการประเภทต่าง ๆ
-**ทีมผู้บริหาร:** ข้อมูลบุคลากรหลักในตำแหน่งสำคัญ (CEO, Operations Manager, Interior & Built-in Specialist, Customer Relations Manager) พร้อมรูปภาพประกอบ
-**การติดต่อ:** แบบฟอร์มติดต่อและที่ตั้งบริษัท
-
-โครงสร้างไฟล์ (File Structure)
-my-business-web
+Website Pages
+Page Description Link
+Home Hero section with animation and call-to-action index.html
+About Company history, mission/vision, and executive team about.html
+Services Service details and pricing comparison table services.html
+Contact Contact information, form, and location map contact.html
+File Structure
+my-business-web/
 ├── index.html
-├── About.html
-├── Services.html
-├── Contact.html
-├── Pictures/
+├── about.html
+├── services.html
+├── Contact Us.html
+├── css/
+│ └── About.css
+│ └── Contact Us.css
+│ └── index.css
+│ └── Services.css
+├── images/
+│ ├── face.png
+│ ├── Mark.webp
 │ └── ...
 └── README.md
+CSS Implementation
+Selectors
+Type Examples Usage
+Universal \* Reset margin, padding, box-sizing
+Element body, h1, h2, img, a Base typography and responsiveness
+Class .container, .card, .btn, .nav-bar Reusable components and layout
+ID #Header, #footer, #mission-vision Unique page sections
+Pseudo-class :hover, :active, :nth-child(even) Interactive states and table striping
+CSS Units
+Unit Usage
+px Borders, box-shadows, fixed spacing
+rem Font sizes, margins, paddings (Responsive scaling)
+% Container widths, fluid images
+vh Hero section height (100vh)
+fr Grid fractions for flexible column layouts
+Color Palette
+Color Hex Code Usage
+FB Blue #1877f2 Headers, Primary Buttons, Links, Accents
+Green #42b72a Secondary Buttons (Chat/Sign up)
+Dark Gray #1c1e21 Primary Text
+Light Gray #f0f2f5 Page Background
+White #ffffff Cards, Navbar, Content Areas
+Typography
+Font Family: "Prompt", "Roboto", "Segoe UI", sans-serif
+Font Weights: 400 (regular), 600 (semi-bold), 700 (bold)
+Line Height: 1.6 (readability)
+Text Effects: text-align: justify, text-shadow (Hero section)
+Box Model
+Padding: Used for inner spacing in cards, buttons, and sections
+Margin: Spacing between sections and elements
+Border: Input fields, table cells, team images
+Border-radius: Rounded corners (8px, 15px, 50% for avatars)
+Positioning & Layout
+Property Usage
+position: sticky Navigation bar stays at top
+position: fixed Back-to-top button and Chat widget
+position: absolute Centering text over Hero image
+position: relative Parent container for Hero section
+Display & Layout Systems
+System Usage
+display: flex Navigation menu, contact form layout, footer
+display: grid Services grid (2-column), Team grid, Mission/Vision
+grid-template-columns repeat(auto-fit, minmax(...)) for responsiveness
+justify-content Centering navigation items
+gap Spacing between grid/flex items
+Hover & Interaction Effects
+Effect CSS Properties
+Button hover Color change, transform: translateY(-2px), shadow
+Card/Image hover transform: translateY(-5px), scale(1.1) (zoom effect)
+Link active border-bottom highlight for current page
+Animations Keyframes @slideInUp for Hero text load
+Smooth Scroll scroll-behavior: smooth for "Top" button
+Responsive Design
+Breakpoint Changes
+Max-width: 768px Stack navigation, single column grids, adjust padding
+Mobile View Hide chat widget, adjust font sizes, vertical layouts
 
 [Home](index.html)
 ![index](Pictures/index.png)

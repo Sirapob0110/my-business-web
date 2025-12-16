@@ -1,0 +1,195 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* ===== Color Theme ===== */
+:root {
+  --orange-main: #ff8c42;
+  --orange-soft: #ffd6b0;
+  --brown-dark: #5a3e2b;
+  --bg-light: #fff7f0;
+  --white: #ffffff;
+}
+
+/* ===== Body ===== */
+body {
+  background-color: var(--bg-light);
+  color: var(--brown-dark);
+  line-height: 1.7;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+header img {
+  border-radius: 10px;
+}
+
+header h1 {
+  color: var(--orange-main);
+  margin-left: 15px;
+}
+
+/* ===== Navigation ===== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: var(--brown-dark);
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+/* เส้นวิ่งใต้เมนู */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--orange-main);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ===== Main ===== */
+main {
+  padding: 50px 80px;
+}
+
+main section {
+  margin-bottom: 60px;
+}
+
+/* ===== Headings ===== */
+h2 {
+  color: var(--orange-main);
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+/* เส้นใต้หัวข้อ */
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 50%;
+  height: 3px;
+  background-color: var(--orange-main);
+}
+
+/* ===== Form Section ===== */
+section:first-of-type {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+}
+
+/* Fieldset */
+fieldset {
+  border: 2px solid var(--orange-soft);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Legend */
+legend {
+  color: var(--orange-main);
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Inputs & Textarea */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--orange-main);
+}
+
+/* Radio & Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Buttons */
+button {
+  background-color: var(--orange-main);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+button[type="reset"] {
+  background-color: #ccc;
+  color: #333;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ===== Map Section ===== */
+iframe {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+  margin-top: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--orange-main);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 0;
+}

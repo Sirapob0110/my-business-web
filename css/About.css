@@ -1,0 +1,163 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* ===== Color Theme ===== */
+:root {
+  --orange-main: #ff8c42;
+  --orange-soft: #ffd6b0;
+  --brown-dark: #5a3e2b;
+  --bg-light: #fff7f0;
+  --card-bg: #ffffff;
+}
+
+/* ===== Body ===== */
+body {
+  background-color: var(--bg-light);
+  color: var(--brown-dark);
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+header img {
+  border-radius: 10px;
+}
+
+header h1 {
+  color: var(--orange-main);
+  margin-left: 15px;
+}
+
+/* ===== Navigation ===== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: var(--brown-dark);
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+/* เส้นใต้เมนู */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--orange-main);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ===== Main ===== */
+main {
+  padding: 50px 80px;
+  flex: 1;
+}
+
+main section {
+  margin-bottom: 60px;
+}
+
+main h2 {
+  color: var(--orange-main);
+  margin-bottom: 15px;
+}
+
+main p {
+  max-width: 900px;
+}
+
+/* ===== Team Section Layout ===== */
+section:last-of-type {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* ===== Team Card ===== */
+figure {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+figure:hover {
+  transform: translateY(-8px);
+}
+
+figure img {
+  width: 200px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* ===== Team Name Underline Effect ===== */
+figcaption h3 {
+  display: inline-block;
+  position: relative;
+  color: var(--orange-main);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* เส้นใต้ชื่อ */
+figcaption h3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background-color: var(--orange-main);
+  transition: all 0.3s ease;
+}
+
+/* เส้นวิ่งเมื่อ hover การ์ด */
+figure:hover h3::after {
+  width: 100%;
+  left: 0;
+}
+
+figcaption p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--orange-main);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 0;
+}
