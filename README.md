@@ -114,22 +114,22 @@ my-business-web/
 
 ### Home
 
-![Home](images/index.png)
+![Home](Pictures/index.png)
 
 ### About
 
-![About](images/about1.png)
-![About](images/about2.png)
+![About](Pictures/about1.png)
+![About](Pictures/about2.png)
 
 ### Services
 
-![Services](images/services1.png)
-![Services](images/services2.png)
+![Services](Pictures/services1.png)
+![Services](Pictures/services2.png)
 
 ### Contact
 
-![Contact](images/contact1.png)
-![Contact](images/contact2.png)
+![Contact_Us](Pictures/contact1.png)
+![Contact_Us](Pictures/contact2.png)
 
 ---
 
