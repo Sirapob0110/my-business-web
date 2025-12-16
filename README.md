@@ -9,12 +9,12 @@ The project demonstrates the use of modern HTML5 and CSS3 techniques, with a foc
 
 ## Website Pages
 
-| Page     | Description                                         | Link                              |
-| -------- | --------------------------------------------------- | --------------------------------- |
-| Home     | Hero section with animation and call-to-action      | [index.html](index.html)          |
-| About    | Company history, mission/vision, and executive team | [About.html](About.html)          |
-| Services | Service details and pricing comparison table        | [Services.html](Services.html)    |
-| Contact  | Contact information, form, and location map         | [ContactUs.html](Contact Us.html) |
+| Page     | Description                                         | Link                             |
+| -------- | --------------------------------------------------- | -------------------------------- |
+| Home     | Hero section with animation and call-to-action      | [index.html](index.html)         |
+| About    | Company history, mission/vision, and executive team | [About.html](About.html)         |
+| Services | Service details and pricing comparison table        | [Services.html](Services.html)   |
+| Contact  | Contact information, form, and location map         | [ContactUs.html](ContactUs.html) |
 
 ## File Structure
 
@@ -134,8 +134,9 @@ _(Place your screenshots in the 'images' folder and update paths below)_
 ![Services](Pictures/Services.png)
 ![Services2](Pictures/Services2.png)
 
-[Contact Us](Contact Us.html)
+[ContactUs](Contact Us.html)
 ![Contact Us](Pictures/Contact.png)
+![Contact Us2](Pictures/Contact2.png)
 
 ---
 
