@@ -118,18 +118,18 @@ my-business-web/
 
 ### About
 
-![About](Pictures/about1.png)
+![About](Pictures/About.png)
 ![About](Pictures/about2.png)
 
 ### Services
 
-![Services](Pictures/services1.png)
+![Services](Pictures/Services.png)
 ![Services](Pictures/services2.png)
 
 ### Contact
 
-![Contact_Us](Pictures/contact1.png)
-![Contact_Us](Pictures/contact2.png)
+![Contact_Us](Pictures/Contact.png)
+![Contact_Us](Pictures/Contact2.png)
 
 ---
 
