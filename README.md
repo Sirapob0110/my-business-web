@@ -2,7 +2,7 @@
 
 ## About the Project
 
-This project is a responsive business website for **CozyCore Co., Ltd.**, an interior design and home decoration company.  
+This project is a responsive business website for **CozyCore**, an interior design and home decoration company.  
 The website presents CozyCore’s vision of creating warm, functional, and well-designed living spaces for homes, condominiums, and commercial areas.
 
 The project demonstrates the use of modern HTML5 and CSS3 techniques, with a focus on responsive design, clean layouts, and user-friendly interfaces to effectively showcase services, team information, and design solutions.
