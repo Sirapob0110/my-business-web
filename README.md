@@ -22,25 +22,25 @@ The project demonstrates the use of modern HTML5 and CSS3 techniques, with a foc
 
 ## File Structure
 
-my-business-web/
+````my-business-web/
 ├── index.html
 ├── About.html
 ├── Services.html
 ├── Contact_Us.html
 ├── css/
 │ ├── index.css
-│ ├── about.css
-│ ├── services.css
+│ ├── About.css
+│ ├── Services.css
 │ └── Contact_Us.css
-├── images/
+├── Pictures/
 │ ├── index.png
-│ ├── about1.png
+│ ├── About.png
 │ ├── about2.png
-│ ├── services1.png
+│ ├── Services.png
 │ ├── services2.png
-│ ├── contact1.png
+│ ├── Contact.png
 │ └── contact2.png
-└── README.md
+└── README.md```
 
 ---
 
@@ -134,3 +134,4 @@ my-business-web/
 ---
 
 © 2025 CozyCore All rights reserved.
+````
